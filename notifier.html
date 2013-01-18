@@ -1,0 +1,29 @@
+<!--
+  notifier
+  Lightweight Message Notification v1.0
+  By www.BaldNerd.com
+  Download the latest build at https://github.com/RobbieF/notifier
+  You're free to use it however you like.
+  This is a pure example of a notification element designed to load in the bottom left of the user's browser window.
+  It is a concept you can easily edit and build-upon, without the heavy-weight nature of a "big" notification system script.
+  This requires your script already have jQuery loaded, so make sure you have it (or it won't do anything).
+  Personally I use PHP to automatically output the message content and it works pretty great.  Fact is, it's light.  That's all I wanted.
+-->
+<!-- Load some things just for the example.  Of course, I recommend putting the contents of the CSS file into your own CSS file -->
+<!DOCTYPE html><html><head><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><link rel='stylesheet' href='./notifier.css' type='text/css' /></head><body>
+
+
+ 
+<!-- code to add to your site -->
+<div id="messages"><a onclick="document.getElementById('messages').style.display='none';return false;" href="#"><img src="./images/closeX.png" id="closeX" width="14" height="14"></a>
+  <b>Hello world.</b>
+  <br />I am an alert that loads and closes automatically, resizes to my content, and allows the user to close it by clicking the X.
+  <br />What's coolest?  I'm extremely tiny.
+</div>
+<script>$('#messages').fadeIn('slow').delay(5000).fadeOut('slow');</script>
+
+
+
+
+<!-- blah blah -->
+</body></html>
